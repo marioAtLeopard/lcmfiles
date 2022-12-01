@@ -1,0 +1,10 @@
+﻿<wap-provisioningdoc>
+  <characteristic version="10.2" type="CellularMgr">
+    <parm name="CellularDataState" value="2" />
+    <parm name="DAAdvancedFeatures" value="false" />
+    <parm name="MNOAdvancedFeatures" value="false" />
+    <parm name="SvcAdvancedFeatures" value="false" />
+    <parm name="DSDSFeatures" value="false" />
+    <parm name="eSIMFeatures" value="false" />
+  </characteristic>
+</wap-provisioningdoc>

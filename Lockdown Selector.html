@@ -1,0 +1,129 @@
+<html>
+
+<head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Leopard Systems</title>
+        <style type="text/css">
+                table {
+                        width: 100%;
+                }
+
+                td {
+                        text-align: center;
+                }
+
+                #banner {
+                        height: 15%;
+                        padding: auto;
+                        text-align: center;
+                }
+
+                #banner-image {
+                        width: 100%;
+                }
+
+                #make,
+                #device,
+                #serial {
+                        height: 5%;
+                        text-align: center;
+                        font-size: 15px;
+                        font-weight: bold;
+                }
+
+                #mac,
+                #ip {
+                        height: 5%;
+                        text-align: center;
+                        font-size: 15px;
+                        text-transform: uppercase;
+                }
+
+                .ta {
+                        text-align: center;
+                }
+
+                .img-item {
+                        width: 55px;
+                }
+
+                .business-unit {
+                        list-style: none;
+                }
+
+                .float-container {
+                        text-align: center;
+                }
+
+                .float-child {
+                        display: inline-block;
+                        padding: 1rem 1rem;
+                        vertical-align: middle;
+                }
+
+                .collapsible {
+                        /* background-color: #777; */
+                        color: white;
+                        cursor: pointer;
+                        /* padding: 18px; */
+                        width: 100%;
+                        border: none;
+                        text-align: left;
+                        outline: none;
+                        font-size: 15px;
+                }
+
+                /* .active,
+                .collapsible:hover {
+                        background-color: #555;
+                } */
+
+                .content {
+                        padding: 0 18px;
+                        max-height: 0;
+                        overflow: hidden;
+                        transition: max-height 0.2s ease-out;
+                        /* background-color: #f1f1f1; */
+                }
+        </style>
+        <script type="text/javascript">
+                function test_me() {
+
+                        var banner = document.getElementById("banner-image");
+                        var a = document.getElementById("a_id");
+                        var a_div = document.getElementById("a_div");
+                        var image_div = document.getElementById("image_div");
+
+                        image_div.innerHTML = banner.src;
+                        a_div.innerHTML = a.href;
+                }
+                function collapsibleTest() {
+                        var coll = document.getElementsByClassName("collapsible");
+                        var i;
+
+                        for (i = 0; i < coll.length; i++) {
+                                coll[i].addEventListener("click", function () {
+                                        this.classList.toggle("active");
+                                        var content = this.nextElementSibling;
+                                        if (content.style.maxHeight) {
+                                                content.style.maxHeight = null;
+                                        } else {
+                                                content.style.maxHeight = content.scrollHeight + "px";
+                                        }
+                                });
+                        }
+                }
+        </script>
+</head>
+
+<body onload="collapsibleTest();">
+        <div id="banner"><img id="banner-image" src="<MCImg_logo_mobile.png>" /></div>
+        <div id="make">%MANUFACTURER%</div>
+        <div id="device">%MCDEVICENAME%</div>
+        <div id="serial">%SERIALNUM%</div>
+        <hr />
+        <!-- &nbsp; -->
+
+</body>
+
+</html>

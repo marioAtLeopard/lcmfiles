@@ -1,1 +1,3 @@
 Initialize notes
+
+https://raw.githubusercontent.com/marioAtLeopard/lcmfiles/main/davidjones/LeopardLoaderAndroid.zip
